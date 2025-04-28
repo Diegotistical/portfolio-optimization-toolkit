@@ -91,10 +91,6 @@ Contributions, suggestions, and feature requests are welcome!
 Please open an issue or submit a pull request for review.
 
 🧠 Authors
-Your Name — your-username
-
-yaml
-Copiar
-Editar
+Diego Urdaneta — Diegotistical
 
 
