@@ -30,7 +30,7 @@ Installation Steps
 Clone the Repository :
 bash
 
-git clone https://github.com/your-username/portfolio-optimization-toolkit.git
+git clone https://github.com/Diegotistical/portfolio-optimization-toolkit.git
 cd portfolio-optimization-toolkit
 Set Up a Virtual Environment (optional but recommended):
 bash
