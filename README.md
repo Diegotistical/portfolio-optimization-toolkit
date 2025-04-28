@@ -1,96 +1,88 @@
 # 📈 Portfolio Optimization Toolkit
 
-**Portfolio Optimization Toolkit** is a modular Python framework for constructing, optimizing, and backtesting financial portfolios.  
-It offers a clean API for optimization routines, utility functions for financial analytics, and a Streamlit application for real-time portfolio visualization.
+A lightweight and modular Python toolkit for portfolio optimization, backtesting, and data visualization. Built with Streamlit for a simple and interactive user interface.
 
 ---
 
 ## 🚀 Features
 
-- **Efficient Portfolio Optimization**  
-  Use modern portfolio theory techniques to optimize asset allocations.
-
-- **Backtesting Engine**  
-  Evaluate portfolio performance over historical data with key financial metrics.
-
-- **Data Loading Utilities**  
-  Load and preprocess asset price data efficiently.
-
-- **Interactive Streamlit Application**  
-  Visualize portfolio performance, allocations, and risk metrics in an intuitive dashboard.
-
-- **Modular and Extensible Design**  
-  Designed for easy extension with additional optimizers, risk models, and data sources.
+- **Portfolio Optimization**: 
+  - Maximize Sharpe Ratio
+  - Minimize Portfolio Volatility
+  - Risk Parity Optimization
+- **Backtesting**:
+  - Simulate and compare portfolio strategies against benchmarks
+- **Data Handling**:
+  - Load historical asset prices from local CSV files
+- **Visualization**:
+  - Interactive performance plots and risk-return charts
+- **Streamlit App**:
+  - Web-based UI for easy experimentation
 
 ---
 
-## 🏛️ Project Structure
-
-Portfolio-Optimization-Toolkit/ │ ├── portfolio_optimizer/ │ ├── init.py │ ├── optimizer.py │ └── utils.py │ ├── app/ │ └── streamlit_app.py │ ├── src/ │ ├── backtest.py │ ├── data_loader.py │ ├── plotter.py │ └── utils.py │ ├── requirements.txt ├── README.md └── LICENSE
-
+## 📂 Project Structure
+       
+      Portfolio Optimization Toolkit/
+      ├── app/
+      │   └── streamlit_app.py
+      ├── portfolio_optimizer/
+      │   ├── __init__.py
+      │   └── optimizer.py
+      ├── src/
+      │   ├── backtest.py
+      │   ├── data_loader.py
+      │   ├── plotter.py
+      │   └── utils.py
+      ├── requirements.txt
+      ├── README.md
+      └── LICENSE
 
 ---
 
-## ⚙️ Installation
+## 🛠️ Installation
 
-1. **Clone the repository**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio-optimization-toolkit.git
+   cd portfolio-optimization-toolkit
+2. Install required packages:
 
-```bash
-git clone https://github.com/Diegotistical/portfolio-optimization-toolkit.git
-cd portfolio-optimization-toolkit
-python3 -m venv venv
-source venv/bin/activate   # On Windows use: venv\Scripts\activate
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   Run the Streamlit app:
+   streamlit run app/streamlit_app.py
 
-📊 Usage
-1. Launch the Streamlit Application
-bash
-streamlit run app/streamlit_app.py
-You will be able to:
+---
 
-Upload your own financial data (CSV format).
+## 📊 Technologies Used
+Python 3.10+
 
-Select optimization methods.
+Streamlit for the web app
 
-Visualize portfolio weights, expected returns, volatility, Sharpe ratios, and more.
+pandas, NumPy for data manipulation
 
-2. Run Backtests Programmatically
-from src.backtest import Backtester
+matplotlib, seaborn for visualization
 
-# Example usage
-backtester = Backtester(price_data)
-results = backtester.run(strategy="equal_weight")
+scipy.optimize for portfolio optimization
 
+---
 
-🛠️ Technologies Used
-Python 3.9+
+## ✨ Future Improvements
+Add more robust backtesting framework (transaction costs, slippage)
 
-NumPy / pandas — data manipulation
+Integrate live data from APIs (Yahoo Finance, Alpha Vantage)
 
-scikit-learn — machine learning utilities (if required)
+Add machine learning-based portfolio selection models
 
-Streamlit — interactive UI
+Extend to multi-period optimization
 
-Matplotlib / Plotly — plotting and data visualization
+---
 
-🧩 Future Improvements
-Add support for risk parity, Black-Litterman optimization.
+## 📜 License
+This project is licensed under the MIT License.
 
-Implement transaction cost modeling in backtesting.
+---
 
-Incorporate real-time data from APIs (e.g., Yahoo Finance, Alpha Vantage).
-
-Extend dashboard with performance attribution analysis.
-
-📄 License
-This project is licensed under the terms of the MIT License.
-See the LICENSE file for details.
-
-🤝 Contributing
-Contributions, suggestions, and feature requests are welcome!
-Please open an issue or submit a pull request for review.
-
-🧠 Authors
-Diego Urdaneta — Diegotistical
-
-
+## 👨‍💻 Authors
+Diego Urdaneta — @Diegotistical
