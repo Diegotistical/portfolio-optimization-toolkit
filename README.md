@@ -19,28 +19,28 @@ Modular and Extensible Design
 Designed for easy extension with additional optimizers, risk models, and data sources.
 
 🏛️ Project Structure
-bash
+css
 Copiar
 Editar
 Portfolio-Optimization-Toolkit/
 │
 ├── portfolio_optimizer/
 │   ├── __init__.py
-│   ├── optimizer.py        # Core optimization algorithms
-│   └── utils.py             # Helper functions for optimization
+│   ├── optimizer.py
+│   └── utils.py
 │
 ├── app/
-│   └── streamlit_app.py     # Streamlit dashboard for portfolio visualization
+│   └── streamlit_app.py
 │
 ├── src/
-│   ├── backtest.py          # Backtesting engine
-│   ├── data_loader.py       # Load and preprocess financial data
-│   ├── plotter.py           # Plot financial metrics and portfolio allocations
-│   └── utils.py             # General utility functions
+│   ├── backtest.py
+│   ├── data_loader.py
+│   ├── plotter.py
+│   └── utils.py
 │
-├── requirements.txt         # Project dependencies
-├── README.md                # Project documentation
-└── LICENSE                  # License information
+├── requirements.txt
+├── README.md
+└── LICENSE
 ⚙️ Installation
 Clone the repository
 
@@ -77,8 +77,6 @@ Select optimization methods.
 Visualize portfolio weights, expected returns, volatility, Sharpe ratios, and more.
 
 2. Run Backtests Programmatically
-You can directly use the src/backtest.py module to run historical backtests on your portfolio strategies:
-
 python
 Copiar
 Editar
@@ -114,3 +112,4 @@ See the LICENSE file for details.
 🤝 Contributing
 Contributions, suggestions, and feature requests are welcome!
 Please open an issue or submit a pull request for review.
+
