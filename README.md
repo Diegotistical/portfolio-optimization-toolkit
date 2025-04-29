@@ -13,7 +13,7 @@ A lightweight and modular Python toolkit for portfolio optimization, backtesting
 - **Backtesting**:
   - Simulate and compare portfolio strategies against benchmarks
 - **Data Handling**:
-  - Load historical asset prices from local CSV files
+  - Fetches historical prices using yfinance (Yahoo Finance API)
 - **Visualization**:
   - Interactive performance plots and risk-return charts
 - **Streamlit App**:
